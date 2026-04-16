@@ -1,0 +1,15 @@
+[workspace]
+[package]
+name = "bounty"
+version = "0.1.0"
+edition = "2021"
+description = "Kairos Bounty — epoch-gated deferred execution component for Tari Ootle"
+license = "BSD-3-Clause"
+repository = "https://github.com/lucenera75/tari-kairos"
+
+[dependencies]
+tari_template_lib = "0.24.0"
+serde = { version = "1", features = ["derive"], default-features = false }
+
+[lib]
+crate-type = ["cdylib"]
